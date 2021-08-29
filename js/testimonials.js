@@ -1,5 +1,6 @@
-const slides = document.querySelector(".testimonials__content--slider")
-  .children;
+const slides = document.querySelector(
+  ".testimonials__content--slider"
+).children;
 const indicatorImgs = document.querySelector(
   ".testimonials__content--indicator"
 ).children;

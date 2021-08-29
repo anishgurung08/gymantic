@@ -1,0 +1,156 @@
+/*^*^**^*^* features section *^*^**^*^**/
+
+@for $img from 1 through 9 {
+  .features-content:nth-child(#{$img}) {
+    background-image: url("../img/features/features-#{$img}.jpg");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.features-title {
+  position: relative;
+  align-self: end;
+  z-index: 1;
+  margin: 5.5rem 5.5rem 0 5.5rem;
+  //   padding: 6vh 4vw !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-primary-m);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.features-content:hover .features-title::before,
+.features-content:active .features-title::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.features-para {
+  background: var(--color-primary-m);
+  padding: 1rem;
+  margin: 5.5rem 2rem 3rem 5.5rem;
+  font-weight: 400;
+}
+
+.features-btn {
+  margin: 0 5.5rem;
+  justify-self: start;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
+  span {
+    position: absolute;
+    display: block;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-image: linear-gradient(90deg, transparent, var(--color-primary));
+    animation: border1 1s linear infinite;
+    animation-delay: 0s;
+  }
+
+  span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-image: linear-gradient(
+      270deg,
+      transparent,
+      var(--color-primary)
+    );
+    animation: border3 1s linear infinite;
+    animation-delay: 0s;
+  }
+
+  span:nth-child(2) {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0.5rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      var(--color-primary)
+    );
+    animation: border2 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  span:nth-child(4) {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.5rem;
+    background-image: linear-gradient(
+      360deg,
+      transparent,
+      var(--color-primary)
+    );
+    animation: border4 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  &:hover,
+  &:active {
+    background: var(--color-primary);
+  }
+}
+
+@keyframes border1 {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes border3 {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes border2 {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes border4 {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: -100%;
+  }
+}

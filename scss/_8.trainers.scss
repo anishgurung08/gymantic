@@ -1,0 +1,76 @@
+/*^*^**^*^* trainers *^*^**^*^**/
+
+.trainers-title {
+  background: var(--color-tertiary-m);
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  padding: 1rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin: 4rem 10rem 2rem 10rem;
+}
+
+.trainers-content {
+  margin: 0 15rem;
+}
+.trainers .card {
+  display: grid;
+  position: relative;
+  height: 30rem;
+  width: 30rem;
+  overflow: hidden;
+
+  &:hover .card-img,
+  &:active .card-img {
+    filter: contrast(30%);
+  }
+
+  &:hover .trainers-specialty,
+  &:active .trainers-specialty,
+  &:hover .trainers-name,
+  &:active .trainers-name {
+    animation: name 1.5s linear forwards;
+    z-index: 1;
+  }
+}
+.trainers-specialty,
+.trainers-name {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  color: var(--color-quinary);
+  transform: translate(-25rem, -15rem);
+}
+
+.trainers-name {
+  bottom: 25%;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes name {
+  0% {
+    transform: translate(-25rem, -15rem);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(8rem, -15rem);
+    opacity: 0.3;
+  }
+
+  60% {
+    transform: translate(8rem, 0rem);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

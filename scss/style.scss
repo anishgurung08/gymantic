@@ -1,0 +1,65 @@
+@import "1.reset";
+@import "2.variables";
+@import "3.utilities";
+@import "4.header";
+@import "5.showcase";
+@import "6.motto";
+@import "7.features";
+@import "8.trainers";
+@import "9.testimonials";
+@import "10.clients";
+@import "11.register";
+@import "12.footer";
+
+@media only screen and (max-width: 1400px) {
+  .trainers-content {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .trainers-title {
+    margin: 4rem 0rem 2rem 0rem;
+  }
+
+  #regForm {
+    width: 60%;
+  }
+}
+
+//************************** Scroll to top button *******************
+
+.scroll {
+  position: fixed;
+  bottom: 70rem;
+  right: 4rem;
+  height: 4rem;
+  width: 4rem;
+  background-image: url("../img/scroll/scroll.svg");
+  background-repeat: no-repeat;
+  background-color: var(--color-secondary-m);
+  background-size: contain;
+  background-position: center;
+  padding: 1rem;
+  border-radius: 50%;
+  z-index: 30;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.scroll.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 4rem;
+}
+
+//*-*-*-*-*-*- Dark Mode Smooth Transition For All HTML Elements -*-*-*-*-*-*-*
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 0.5s !important;
+  transition-delay: 0 !important;
+}

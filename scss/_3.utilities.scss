@@ -1,0 +1,27 @@
+/*^*^**^*^* utilities *^*^**^*^**/
+
+:root {
+  font-size: 63.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.9;
+  background-color: var(--color-primary);
+  letter-spacing: 0.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--color-quinary);
+  letter-spacing: 0.2rem;
+}
+
+i {
+  color: var(--color-primary);
+}

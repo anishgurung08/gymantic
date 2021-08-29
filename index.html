@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Fonts -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -22,781 +33,865 @@
     <link rel="shortcut icon" type="image/svg" href="img/logo/favicon.svg" />
 
     <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>gYmantic | Bring fitness to your world</title>
   </head>
-  <body class="container">
-    <!---*-*-*-*-*-*-*-*--*-*-*- Header Section --*-*-*-*-*-*-*-*-*-*-*-->
-    <header class="header">
-      <!-- Hamburger Lines Container -->
-      <div class="header__menu">
-        <div class="header__menu--line"></div>
-      </div>
+  <body>
+    <!-- header section -->
 
-      <!-- Overlay -->
+    <div class="container">
       <div class="header__overlay"></div>
 
-      <!-- Navigation -->
-      <nav class="header__nav">
-        <a href="#" class="header__nav--logo"
+      <nav id="navbar" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"
           ><img src="img/logo/logo.svg" alt="logo"
         /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNavbar"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
 
-        <ul class="header__nav--links">
-          <li class="header__nav--links__item">
-            <a href="#" data-text="Home">Home</a>
-          </li>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase nav-active"
+                data-text="Home"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                href="shop.html"
+                data-text="About"
+                >About</a
+              >
+            </li>
 
-          <li class="header__nav--links__item">
-            <a href="#" data-text="About">About</a>
-          </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                href="product.html"
+                data-text="Classes"
+                >Classes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                href="#projects"
+                data-text="Events"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#posts" data-text="News"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                href="#reviews"
+                data-text="Shop"
+                >Shop</a
+              >
+            </li>
 
-          <li class="header__nav--links__item">
-            <a href="#" data-text="Classes">Classes</a>
-          </li>
-
-          <li class="header__nav--links__item">
-            <a href="#" data-text="Events">Events</a>
-          </li>
-
-          <li class="header__nav--links__item">
-            <a href="#" data-text="News">News</a>
-          </li>
-
-          <li class="header__nav--links__item">
-            <a href="#" data-text="Shop">Shop</a>
-          </li>
-
-          <div class="header__nav--links__toggle-container">
-            <input type="checkbox" id="toggle" name="theme" />
-          </div>
-        </ul>
+            <div class="header__nav--links__toggle-container mx-auto">
+              <input type="checkbox" id="toggle" name="theme" />
+            </div>
+          </ul>
+        </div>
       </nav>
-    </header>
+    </div>
+    <!-- end of header section -->
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Showcase Section --*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- showcase-section -->
     <section class="showcase">
-      <div class="showcase__content">
-        <h1 class="showcase__content--title">Commit to be fit</h1>
-        <p class="showcase__content--para">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
-          est.
-        </p>
-        <div class="showcase__content--links">
-          <a href="#">Find out more</a>
-          <a href="#">Join now</a>
+      <div class="container-fluid">
+        <div class="showcase__content">
+          <h1 class="showcase__content--title">Commit to be fit</h1>
+          <p class="showcase__content--para text-capitalize">
+            believe in yourself be the best you can be
+          </p>
+          <div class="showcase__content--links">
+            <a href="#">Find out more</a>
+            <a href="#">Join now</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Motto Section --*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- end of showcase-section -->
+
+    <!-- Motto Section -->
     <section class="motto">
-      <!-- Content 1 -->
-      <div class="motto__content">
-        <i class="fab fa-accessible-icon"></i>
-        <h2 class="motto__content--title">Too Fit to Quit</h2>
-        <p class="motto__content--para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-          fuga, quas libero alias blanditiis animi totam distinctio delectus
-          dolor. Vero quasi aliquid illum. Dolorum, consequatur!
-        </p>
-        <a href="#" class="motto__content--link">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Find Out More
-        </a>
-      </div>
+      <div class="container">
+        <div class="row">
+          <!-- motto content 1 -->
+          <div class="col-12 col-md-6 col-lg-4 motto-content my-4">
+            <div class="card">
+              <i class="fab fa-accessible-icon fa-5x"></i>
 
-      <!-- Content 2 -->
-      <div class="motto__content">
-        <i class="fas fa-dumbbell"></i>
-        <h2 class="motto__content--title">Use it or Lose it</h2>
-        <p class="motto__content--para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-          fuga, quas libero alias blanditiis animi totam distinctio delectus
-          dolor. Vero quasi aliquid illum. Dolorum, consequatur!
-        </p>
-        <a href="#" class="motto__content--link">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Find Out More
-        </a>
-      </div>
+              <h2 class="motto-heading py-5 text-white fw-light display-2">
+                Too Fit to Quit
+              </h2>
+              <p class="moto-para text-white fs-2 pb-5 fw-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deleniti fuga, quas libero alias blanditiis animi totam
+                distinctio delectus dolor. Vero quasi aliquid illum. Dolorum,
+                consequatur!
+              </p>
+              <a href="#" class="motto-btn fs-2 fw-light"
+                ><span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Find Out More</a
+              >
+            </div>
+          </div>
+          <!-- end of motto content 1 -->
 
-      <!-- Content 3 -->
-      <div class="motto__content">
-        <i class="fas fa-medal"></i>
-        <h2 class="motto__content--title">No Pain, No Gain</h2>
-        <p class="motto__content--para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-          fuga, quas libero alias blanditiis animi totam distinctio delectus
-          dolor. Vero quasi aliquid illum. Dolorum, consequatur!
-        </p>
-        <a href="#" class="motto__content--link">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Find Out More
-        </a>
+          <!-- motto content 1 -->
+          <div class="col-12 col-md-6 col-lg-4 motto-content my-4">
+            <div class="card">
+              <i class="fas fa-dumbbell fa-5x"></i>
+
+              <h2 class="motto-heading py-5 text-white fw-light display-2">
+                Use it or Lose it
+              </h2>
+              <p class="moto-para text-white fs-2 pb-5 fw-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deleniti fuga, quas libero alias blanditiis animi totam
+                distinctio delectus dolor. Vero quasi aliquid illum. Dolorum,
+                consequatur!
+              </p>
+              <a href="#" class="motto-btn fs-2 fw-light">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Find Out More</a
+              >
+            </div>
+          </div>
+          <!-- end of motto content 1 -->
+
+          <!-- motto content 1 -->
+          <div class="col-12 col-md-6 col-lg-4 motto-content my-4">
+            <div class="card">
+              <i class="fas fa-medal fa-5x"></i>
+
+              <h2 class="motto-heading py-5 text-white fw-light display-2">
+                No Pain, No Gain
+              </h2>
+              <p class="moto-para text-white fs-2 pb-5 fw-normal">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deleniti fuga, quas libero alias blanditiis animi totam
+                distinctio delectus dolor. Vero quasi aliquid illum. Dolorum,
+                consequatur!
+              </p>
+              <a href="#" class="motto-btn fs-2 fw-light">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Find Out More</a
+              >
+            </div>
+          </div>
+          <!-- end of motto content 1 -->
+        </div>
       </div>
     </section>
+    <!-- End of Motto Section -->
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Features Section --*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- features section -->
     <section class="features">
-      <!-- Card 1 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Progression</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Progression
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 2 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Power Yoga</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Power Yoga
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 3 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Workout</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Workout
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 4 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Efficiency</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Efficiency
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 5 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Nutrition</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Nutrition
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 6 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Cardio Program</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Cardio Program
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 7 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Pure Strength</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Pure Strength
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 8 -->
-      <div class="features__content">
-        <h2 class="features__content--title">Functionality</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              Functionality
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
 
-      <!-- Card 9 -->
-      <div class="features__content">
-        <h2 class="features__content--title">True Challenge</h2>
-        <p class="features__content--para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          soluta?
-        </p>
-        <a href="#" class="features__content--link"
-          >Read More
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4 features-content text-white">
+            <h1
+              class="
+                features-title
+                text-capitalize text-center
+                display-2
+                fw-bold
+                py-4
+              "
+            >
+              True Challenge
+            </h1>
+            <p class="features-para text-center fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, soluta?
+            </p>
+            <a href="#" class="btn features-btn fs-2"
+              >Read More
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- end of Card 1 -->
+        </div>
       </div>
     </section>
+    <!-- end of features section -->
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Trainers Section --*-*-*-*-*-*-*-*-*-*-*-->
-    <section class="trainers">
-      <h2 class="trainers__title">Meet Our Expert Trainers</h2>
-      <div class="trainers__content">
-        <!-- Trainer 1 -->
-        <div class="trainers__content--card">
-          <h4 class="trainers__content--card__specialty">BODYBUILDING COACH</h4>
-          <h3 class="trainers__content--card__name">DAVID SMITH</h3>
-          <img
-            src="img/trainers/trainer-1.jpg"
-            alt="DAVID SMITH"
-            class="trainers__content--card__img"
-          />
+    <!-- trainers -->
+    <section class="trainers container">
+      <h2 class="trainers-title text-capitalize text-center display-2">
+        meet our exert trainers
+      </h2>
+      <div class="row trainers-content">
+        <!-- trainer 1 -->
+        <div class="co-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 mx-auto">
+            <img
+              src="img/trainers/trainer-1.jpg"
+              alt="DAVID SMITH"
+              class="card-img"
+            />
+            <h6 class="trainers-specialty text-uppercase">
+              bodybuilding coach
+            </h6>
+            <h2 class="trainers-name text-uppercase fw-bold">david smith</h2>
+          </div>
         </div>
+        <!-- end of trainer 1 -->
 
-        <!-- Trainer 2 -->
-        <div class="trainers__content--card">
-          <h4 class="trainers__content--card__specialty">
-            CARDIO & CONDITIONING
-          </h4>
-          <h3 class="trainers__content--card__name">AMARA MCGUIRE</h3>
-          <img
-            src="img/trainers/trainer-2.jpg"
-            alt="AMARA MCGUIRE"
-            class="trainers__content--card__img"
-          />
+        <!-- trainer 2 -->
+        <div class="co-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 mx-auto">
+            <img
+              src="img/trainers/trainer-2.jpg"
+              alt="AMARA MCGUIRE"
+              class="card-img"
+            />
+            <h6 class="trainers-specialty text-uppercase">
+              cardio & confitioning
+            </h6>
+            <h2 class="trainers-name text-uppercase fw-bold">amara mcguire</h2>
+          </div>
         </div>
+        <!-- end of trainer 2 -->
 
-        <!-- Trainer 3 -->
-        <div class="trainers__content--card">
-          <h4 class="trainers__content--card__specialty">
-            CROSSFIT EXPERT
-          </h4>
-          <h3 class="trainers__content--card__name">WILLIAM DIXON</h3>
-          <img
-            src="img/trainers/trainer-3.jpg"
-            alt="WILLIAM DIXON"
-            class="trainers__content--card__img"
-          />
+        <!-- trainer 3 -->
+        <div class="co-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 mx-auto">
+            <img
+              src="img/trainers/trainer-3.jpg"
+              alt="WILLIAM DIXON"
+              class="card-img"
+            />
+            <h6 class="trainers-specialty text-uppercase">CROSSFIT EXPERT</h6>
+            <h2 class="trainers-name text-uppercase fw-bold">WILLIAM DIXON</h2>
+          </div>
         </div>
+        <!-- end of trainer 3 -->
 
-        <!-- Trainer 4 -->
-        <div class="trainers__content--card">
-          <h4 class="trainers__content--card__specialty">
-            CARDIO & CONDITIONING
-          </h4>
-          <h3 class="trainers__content--card__name">MADISON FRONING</h3>
-          <img
-            src="img/trainers/trainer-4.jpg"
-            alt="MADISON FRONING"
-            class="trainers__content--card__img"
-          />
+        <!-- trainer 4 -->
+        <div class="co-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 mx-auto">
+            <img
+              src="img/trainers/trainer-4.jpg"
+              alt="MADISON FRONING"
+              class="card-img"
+            />
+            <h6 class="trainers-specialty text-uppercase">
+              CARDIO & CONDITIONING
+            </h6>
+            <h2 class="trainers-name text-uppercase fw-bold">
+              MADISON FRONING
+            </h2>
+          </div>
         </div>
+        <!-- end of trainer 4 -->
 
-        <!-- Trainer 5 -->
-        <div class="trainers__content--card">
-          <h4 class="trainers__content--card__specialty">
-            CROSSFIT EXPERT
-          </h4>
-          <h3 class="trainers__content--card__name">IVY BULLOCK</h3>
-          <img
-            src="img/trainers/trainer-5.jpg"
-            alt="IVY BULLOCK"
-            class="trainers__content--card__img"
-          />
+        <!-- trainer 5 -->
+        <div class="co-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 mx-auto">
+            <img
+              src="img/trainers/trainer-5.jpg"
+              alt="IVY BULLOCK"
+              class="card-img"
+            />
+            <h6 class="trainers-specialty text-uppercase">CROSSFIT EXPERT</h6>
+            <h2 class="trainers-name text-uppercase fw-bold">IVY BULLOCK</h2>
+          </div>
         </div>
+        <!-- end of trainer 5 -->
 
-        <!-- Trainer 6 -->
-        <div class="trainers__content--card">
-          <h4 class="trainers__content--card__specialty">
-            BODYBUILDING COACH
-          </h4>
-          <h3 class="trainers__content--card__name">MATIE SIMMS JUNIOR</h3>
-          <img
-            src="img/trainers/trainer-6.jpg"
-            alt="MATIE SIMMS JUNIOR"
-            class="trainers__content--card__img"
-          />
+        <!-- trainer 6 -->
+        <div class="co-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 mx-auto">
+            <img
+              src="img/trainers/trainer-6.jpg"
+              alt="MATIE SIMMS JUNIOR"
+              class="card-img"
+            />
+            <h6 class="trainers-specialty text-uppercase">
+              BODYBUILDING COACH
+            </h6>
+            <h2 class="trainers-name text-uppercase fw-bold">
+              MATIE SIMMS JUNIOR
+            </h2>
+          </div>
         </div>
+        <!-- end of trainer 6 -->
       </div>
     </section>
+    <!-- end of trainers -->
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Testimonials Section --*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- testimonials  -->
     <section class="testimonials">
-      <h2 class="testimonials__title">Testimonials</h2>
-      <div class="testimonials__content">
-        <!-- Slider -->
-        <div class="testimonials__content--slider">
-          <!-- Slide 1 -->
-          <div class="testimonials__content--slider__slide active">
-            <p class="testimonials__content--slider__slide--para">
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              autem placeat natus iste aut inventore voluptas nesciunt
-              consectetur quod sint. "
-            </p>
-            <h3 class="testimonials__content--slider__slide--title">
-              Natasha Barton
-            </h3>
-          </div>
+      <div class="container-fluid text-white">
+        <h2 class="testimonials__title text-center display-1 py-5 fw-light">
+          Testimonials
+        </h2>
+        <div class="testimonials__content">
+          <!-- slider -->
+          <div class="testimonials__content--slider">
+            <!-- slider 1 -->
+            <div
+              class="testimonials__content--slider__slide active text-center"
+            >
+              <p class="testimonials__content--slider__slide--para fs-2">
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                autem placeat natus iste aut inventore voluptas nesciunt
+                consectetur quod sint. "
+              </p>
+              <h3 class="testimonials__content--slider__slide--title fw-bold">
+                Natasha Barton
+              </h3>
+            </div>
+            <!-- end of slider 1 -->
 
-          <!-- Slide 2 -->
-          <div class="testimonials__content--slider__slide">
-            <p class="testimonials__content--slider__slide--para">
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              autem placeat natus iste aut inventore voluptas nesciunt
-              consectetur quod sint. "
-            </p>
-            <h3 class="testimonials__content--slider__slide--title">
-              Ryan Cavill
-            </h3>
-          </div>
+            <!-- slider 2 -->
+            <div class="testimonials__content--slider__slide text-center">
+              <p class="testimonials__content--slider__slide--para fs-2">
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                autem placeat natus iste aut inventore voluptas nesciunt
+                consectetur quod sint. "
+              </p>
+              <h3 class="testimonials__content--slider__slide--title fw-bold">
+                Ryan Cavill
+              </h3>
+            </div>
+            <!-- end of slider 2 -->
 
-          <!-- Slide 3 -->
-          <div class="testimonials__content--slider__slide">
-            <p class="testimonials__content--slider__slide--para">
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              autem placeat natus iste aut inventore voluptas nesciunt
-              consectetur quod sint. "
-            </p>
-            <h3 class="testimonials__content--slider__slide--title">
-              Sandra Rogers
-            </h3>
+            <!-- slider 3 -->
+            <div class="testimonials__content--slider__slide text-center">
+              <p class="testimonials__content--slider__slide--para fs-2">
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                autem placeat natus iste aut inventore voluptas nesciunt
+                consectetur quod sint. "
+              </p>
+              <h3 class="testimonials__content--slider__slide--title fw-bold">
+                Sandra Rogers
+              </h3>
+            </div>
+            <!-- end of slider 3 -->
           </div>
-        </div>
-
-        <!-- Indicator -->
-        <div class="testimonials__content--indicator">
-          <img
-            src="img/testimonials/testimonial-1.jpg"
-            alt="testimonial-1"
-            class="testimonials__content--indicator__img active"
-            data-id="0"
-          />
-          <img
-            src="img/testimonials/testimonial-2.jpg"
-            alt="testimonial-2"
-            class="testimonials__content--indicator__img"
-            data-id="1"
-          />
-          <img
-            src="img/testimonials/testimonial-3.jpg"
-            alt="testimonial-3"
-            class="testimonials__content--indicator__img"
-            data-id="2"
-          />
+          <!-- indicator -->
+          <div class="testimonials__content--indicator">
+            <img
+              src="img/testimonials/testimonial-1.jpg"
+              alt="testimonial-1"
+              class="testimonials__content--indicator__img active"
+              data-id="0"
+            />
+            <img
+              src="img/testimonials/testimonial-2.jpg"
+              alt="testimonial-2"
+              class="testimonials__content--indicator__img"
+              data-id="1"
+            />
+            <img
+              src="img/testimonials/testimonial-3.jpg"
+              alt="testimonial-3"
+              class="testimonials__content--indicator__img"
+              data-id="2"
+            />
+          </div>
+          <!-- end of indicator -->
         </div>
       </div>
     </section>
+
+    <!-- end of testimonials  -->
 
     <!---*-*-*-*-*-*-*-*--*-*-*- Clients Section --*-*-*-*-*-*-*-*-*-*-*-->
     <section class="clients">
-      <h2 class="clients__title">Our Clients</h2>
-      <div class="clients__content">
-        <div class="clients__content--img">
-          <img src="img/clients/client-1.png" alt="client-1" />
-        </div>
+      <h2 class="clients__title text-center display-1 fw-normal text-white">
+        Our Clients
+      </h2>
+      <div
+        class="col-12 clients__content d-flex justify-content-evenly flex-wrap"
+      >
+        <img src="img/clients/client-1.png" alt="client-1" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-2.png" alt="client-2" />
-        </div>
+        <img src="img/clients/client-2.png" alt="client-2" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-3.png" alt="client-3" />
-        </div>
+        <img src="img/clients/client-3.png" alt="client-3" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-4.png" alt="client-4" />
-        </div>
+        <img src="img/clients/client-4.png" alt="client-4" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-5.png" alt="client-5" />
-        </div>
+        <img src="img/clients/client-5.png" alt="client-5" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-6.png" alt="client-6" />
-        </div>
+        <img src="img/clients/client-6.png" alt="client-6" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-7.png" alt="client-7" />
-        </div>
+        <img src="img/clients/client-7.png" alt="client-7" />
 
-        <div class="clients__content--img">
-          <img src="img/clients/client-8.png" alt="client-8" />
-        </div>
+        <img src="img/clients/client-8.png" alt="client-8" />
       </div>
     </section>
+    <!---*-*-*-*-*-*-*-*--*-*-*- end of Clients Section --*-*-*-*-*-*-*-*-*-*-*-->
 
     <!---*-*-*-*-*-*-*-*--*-*-*- Scroll to Top Button --*-*-*-*-*-*-*-*-*-*-*-->
     <div class="scroll"></div>
+    <!---*-*-*-*-*-*-*-*--*-*-*- end of Scroll to Top Button --*-*-*-*-*-*-*-*-*-*-*-->
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Register Section --*-*-*-*-*-*-*-*-*-*-*-->
+    <!---*-*-*-*-*-*-*-*--*-*-*- register Section --*-*-*-*-*-*-*-*-*-*-*-->
     <section class="register">
-      <!-- Register Progress -->
-      <div class="register__progress">
-        <div class="register__progress--step">
-          <span>1</span>
-          <i class="fa fa-check"></i>
+      <form id="regForm">
+        <h1>Register:</h1>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab fs-2">
+          Name:
+          <p>
+            <input
+              placeholder="First name..."
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+          <p>
+            <input
+              placeholder="Last name..."
+              oninput="this.className = ''"
+              name="lname"
+            />
+          </p>
         </div>
-
-        <div class="register__progress--step">
-          <span>2</span>
-          <i class="fa fa-check"></i>
+        <div class="tab fs-2">
+          Contact Info:
+          <p>
+            <input
+              placeholder="E-mail..."
+              oninput="this.className = ''"
+              name="email"
+            />
+          </p>
+          <p>
+            <input
+              placeholder="Phone..."
+              oninput="this.className = ''"
+              name="phone"
+            />
+          </p>
         </div>
-
-        <div class="register__progress--step">
-          <span>3</span>
-          <i class="fa fa-check"></i>
+        <div class="tab fs-2">
+          Birthday:
+          <p>
+            <input placeholder="dd" oninput="this.className = ''" name="dd" />
+          </p>
+          <p>
+            <input placeholder="mm" oninput="this.className = ''" name="nn" />
+          </p>
+          <p>
+            <input
+              placeholder="yyyy"
+              oninput="this.className = ''"
+              name="yyyy"
+            />
+          </p>
         </div>
-
-        <div class="register__progress--step">
-          <span>4</span>
-          <i class="fa fa-check"></i>
+        <div class="tab fs-2">
+          Login Info:
+          <p>
+            <input
+              placeholder="Username..."
+              oninput="this.className = ''"
+              name="uname"
+            />
+          </p>
+          <p>
+            <input
+              placeholder="Password..."
+              oninput="this.className = ''"
+              name="pword"
+              type="password"
+            />
+          </p>
         </div>
-      </div>
-
-      <!-- Register Content -->
-      <div class="register__content">
-        <div class="register__content--form">
-          <!-- *-*-*-*-*-*-* First Page Starts Here *-*-*-*-*-*-*-*-* -->
-
-          <div class="register__content--form__page">
-            <!-- First Name -->
-            <div class="register__content--form__page--field">
-              <label for="first-name">First Name</label>
-              <input type="text" />
-            </div>
-
-            <!-- Last Name -->
-            <div class="register__content--form__page--field">
-              <label for="last-name">Last Name</label>
-              <input type="text" />
-            </div>
-
-            <!-- Next Button -->
-            <div class="register__content--form__page--field">
-              <button class="next-1 next">Next</button>
-            </div>
+        <div style="overflow: auto">
+          <div style="float: right">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+              Previous
+            </button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">
+              Next
+            </button>
           </div>
-
-          <!-- *-*-*-*-*-*-* First Page Ends Here *-*-*-*-*-*-*-*-* -->
-
-          <!-- *-*-*-*-*-*-* Second Page Starts Here *-*-*-*-*-*-*-*-* -->
-
-          <div class="register__content--form__page">
-            <!-- Email Address -->
-            <div class="register__content--form__page--field">
-              <label for="email-address">Email Address</label>
-              <input type="email" />
-            </div>
-
-            <!-- Phone Number -->
-            <div class="register__content--form__page--field">
-              <label for="phone-number">Phone Number</label>
-              <input type="number" />
-            </div>
-
-            <!-- Next Button -->
-            <div class="register__content--form__page--field btns">
-              <button class="prev-1 prev">Previous</button>
-              <button class="next-2 next">Next</button>
-            </div>
-          </div>
-
-          <!-- *-*-*-*-*-*-* Second Page Ends Here *-*-*-*-*-*-*-*-* -->
-
-          <!-- *-*-*-*-*-*-* Third Page Starts Here *-*-*-*-*-*-*-*-* -->
-
-          <div class="register__content--form__page">
-            <!-- Data of Birth -->
-            <div class="register__content--form__page--field">
-              <label for="date-of-birth">Data of Birth</label>
-              <input type="text" />
-            </div>
-
-            <!-- Gender -->
-            <div class="register__content--form__page--field">
-              <label for="gender">Gender</label>
-              <select>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <!-- Next Button -->
-            <div class="register__content--form__page--field btns">
-              <button class="prev-2 prev">Previous</button>
-              <button class="next-3 next">Next</button>
-            </div>
-          </div>
-
-          <!-- *-*-*-*-*-*-* Third Page Ends Here *-*-*-*-*-*-*-*-* -->
-
-          <!-- *-*-*-*-*-*-* Forth Page Starts Here *-*-*-*-*-*-*-*-* -->
-
-          <div class="register__content--form__page">
-            <!-- Username -->
-            <div class="register__content--form__page--field">
-              <label for="usernaame">Username</label>
-              <input type="text" />
-            </div>
-
-            <!-- Password -->
-            <div class="register__content--form__page--field">
-              <label for="password">Password</label>
-              <input type="password" />
-            </div>
-
-            <!-- Next Button -->
-            <div class="register__content--form__page--field btns">
-              <button class="prev-3 prev">Previous</button>
-              <button class="submit">Submit</button>
-            </div>
-          </div>
-
-          <!-- *-*-*-*-*-*-* Forth Page Ends Here *-*-*-*-*-*-*-*-* -->
         </div>
-      </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align: center; margin-top: 40px">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
     </section>
+    <!---*-*-*-*-*-*-*-*--*-*-*- end of register Section --*-*-*-*-*-*-*-*-*-*-*-->
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Footer Section --*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- footer  -->
     <footer class="footer">
-      <!-- Footer Content -->
-      <div class="footer__content">
-        <!-- About Us -->
-        <div class="footer__content--about-us footer__content--section">
-          <i class="fas fa-user-friends"></i>
-          <h3
-            class="footer__content--about-us__title footer__content--section__title"
-          >
-            About us
-          </h3>
-          <a
-            href="#"
-            class="footer__content--about-us__link footer__content--section__link"
-            >gYmantic in a nutshell</a
-          >
+      <div class="container">
+        <div class="row d-flex justify-content-evenly text-white">
+          <!-- about us content -->
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-5 border-end">
+            <i class="fas fa-user-friends fa-5x"></i>
+            <h2 class="my-5">About Us</h2>
+            <ul class="list-unstyled fs-3 fw-light">
+              <li class="list-inline pb-3">gYmantic in a nutshell</li>
+              <li class="list-inline pb-3">What we do</li>
+              <li class="list-inline pb-3">History</li>
+              <li class="list-inline pb-3">Location</li>
+              <li class="list-inline pb-3">Management Team</li>
+            </ul>
+          </div>
 
-          <a
-            href="#"
-            class="footer__content--about-us__link footer__content--section__link"
-            >What we do</a
-          >
+          <!-- Gym Classes content -->
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-5 border-end">
+            <i class="fas fa-dumbbell fa-5x"></i>
+            <h2 class="my-5">Gym Classes</h2>
+            <ul class="list-unstyled fs-3 fw-light">
+              <li class="list-inline pb-3">Overview</li>
+              <li class="list-inline pb-3">Classes alternate view</li>
+              <li class="list-inline pb-3">Class Pricing</li>
+              <li class="list-inline pb-3">Single Class</li>
+              <li class="list-inline pb-3">Find out more</li>
+            </ul>
+          </div>
+          <!-- end of Gym Classes content -->
 
-          <a
-            href="#"
-            class="footer__content--about-us__link footer__content--section__link"
-            >History</a
-          >
+          <!-- Newsletter content -->
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-5 border-end">
+            <i class="far fa-newspaper fa-5x"></i>
+            <h2 class="my-5">Newsletter</h2>
+            <p class="fs-3 fw-light">
+              Subscribe to our newsletter to receive regular updates & news from
+              us.
+            </p>
+            <input type="email" placeholder="Your email" />
+            <input type="submit" value="Send" />
+          </div>
+          <!-- End of Newsletter content -->
 
-          <a
-            href="#"
-            class="footer__content--about-us__link footer__content--section__link"
-            >Location</a
-          >
+          <!-- Location content -->
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-5 border-end">
+            <i class="fas fa-map-marked-alt fa-5x"></i>
+            <h2 class="my-5">Head Office</h2>
+            <p class="fs-3 fw-light">177A Bleecker Street, NYC, USA</p>
 
-          <a
-            href="#"
-            class="footer__content--about-us__link footer__content--section__link"
-            >Management Team</a
-          >
+            <i class="far fa-envelope-open fa-5x"></i>
+            <h2 class="my-5">Email Us</h2>
+            <p class="fs-3 fw-light">example@example.com</p>
+            <div class="footer__text--underline mt-5"></div>
+          </div>
+          <!-- end of Gym Classes content -->
         </div>
-
-        <!-- Gym Classes -->
-        <div class="footer__content--classes footer__content--section">
-          <i class="fas fa-dumbbell"></i>
-          <h3
-            class="footer__content--classes__title footer__content--section__title"
-          >
-            Gym Classes
-          </h3>
-          <a
-            href="#"
-            class="footer__content--classes__link footer__content--section__link"
-            >Overview</a
-          >
-
-          <a
-            href="#"
-            class="footer__content--classes__link footer__content--section__link"
-            >Classes alternate view</a
-          >
-
-          <a
-            href="#"
-            class="footer__content--classes__link footer__content--section__link"
-            >Class Pricing</a
-          >
-
-          <a
-            href="#"
-            class="footer__content--classes__link footer__content--section__link"
-            >Single Class</a
-          >
-
-          <a
-            href="#"
-            class="footer__content--classes__link footer__content--section__link"
-            >Find out more</a
-          >
+        <div class="footer-logo mb-5">
+          <img src="img/logo/footer.svg" alt="logo" />
+          <h2>gYmantic</h2>
         </div>
+        <div class="d-flex justify-content-between text-white flex-wrap">
+          <div class="social d-flex mb-3">
+            <i class="fas fa-phone-alt fa-3x"></i>
+            <p class="fs-3">CALL US NOW: XXXX XXXX XXXX</p>
+          </div>
+          <div class="social-icon">
+            <a href="#" class="mr-1">
+              <i class="fab fa-facebook-f fa-3x border rounded-circle p-3"></i>
+            </a>
 
-        <!-- Newsletter -->
-        <div class="footer__content--newsletter footer__content--section">
-          <i class="far fa-newspaper"></i>
-          <h3
-            class="footer__content--newsletter__title footer__content--section__title"
-          >
-            Newsletter
-          </h3>
-          <p
-            class="footer__content--newsletter__para footer__content--section__para"
-          >
-            Subscribe to our newsletter to receive regular updates & news from
-            us.
-          </p>
-          <input type="email" placeholder="Your Email" />
-          <input type="submit" value="Send" />
-        </div>
+            <a href="#">
+              <i class="fab fa-instagram fa-3x border rounded-circle p-3"></i>
+            </a>
 
-        <!-- Head Office -->
-        <div class="footer__content--address footer__content--section">
-          <!-- Address -->
-          <i class="fas fa-map-marked-alt"></i>
-          <h3
-            class="footer__content--address__title footer__content--section__title"
-          >
-            Head Office
-          </h3>
-          <p
-            class="footer__content--address__para footer__content--section__para"
-          >
-            177A Bleecker Street, NYC, USA
-          </p>
+            <a href="#">
+              <i class="fab fa-twitter fa-3x border rounded-circle p-3"></i>
+            </a>
 
-          <!-- Email -->
-          <i class="far fa-envelope-open"></i>
-          <h3
-            class="footer__content--address__title footer__content--section__title"
-          >
-            Email Us
-          </h3>
-          <p
-            class="footer__content--address__para footer__content--section__para"
-          >
-            info@cosmically.cool
-          </p>
-        </div>
-      </div>
-
-      <!-- Footer Logo -->
-      <div class="footer__logo">
-        <img src="img/logo/footer.svg" alt="footer-logo" />
-        <span>gYmantic</span>
-      </div>
-
-      <!-- Footer Social -->
-      <div class="footer__social">
-        <!-- Call -->
-        <div class="footer__social--call">
-          <i class="fas fa-phone-alt"></i>
-          <p class="footer__social--call__para">CALL US NOW: XXXX XXXX XXX</p>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="footer__social--icons">
-          <!-- Facebook -->
-          <a href="#" class="footer__social--icons__link">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-
-          <!-- Instagram -->
-          <a href="#" class="footer__social--icons__link">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <!-- Twitter -->
-          <a href="#" class="footer__social--icons__link">
-            <i class="fab fa-twitter"></i>
-          </a>
-
-          <!-- YouTube -->
-          <a href="#" class="footer__social--icons__link">
-            <i class="fab fa-youtube"></i>
-          </a>
+            <a href="#">
+              <i class="fab fa-youtube fa-3x border rounded-circle p-3"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- end of footer  -->
 
-    <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-* JavaScript Files *-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
-    <!-- Nav -->
-    <script src="js/nav.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Dark Mode -->
-    <script src="js/dark-mode.js"></script>
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <!-- Testimonials -->
+    <!-- my custom scripts -->
+    <script src="js/scripts.js"></script>
+
+    <!-- testimonials js -->
     <script src="js/testimonials.js"></script>
 
-    <!-- Scroll -->
+    <!-- scroll js -->
     <script src="js/scroll.js"></script>
 
-    <!-- Form -->
+    <!-- form js -->
     <script src="js/form.js"></script>
+
+    <!-- dark mode js -->
+    <script src="js/dark-mode.js"></script>
   </body>
 </html>

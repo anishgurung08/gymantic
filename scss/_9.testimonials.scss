@@ -1,0 +1,75 @@
+// Testimonials section
+.testimonials {
+  background-image: linear-gradient(
+      var(--color-tertiary-m),
+      var(--color-tertiary-m)
+    ),
+    url("../img/testimonials/testimonials-bg.jpg");
+  min-height: 80vh;
+
+  &__title {
+    letter-spacing: 0.2rem;
+    margin-bottom: 4vh;
+  }
+
+  &__content {
+    max-width: 100rem;
+    margin: 0 auto;
+
+    &--slider {
+      border: 0.1rem solid var(--color-quinary);
+      max-width: 60rem;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2vh 1vw;
+
+      &__slide {
+        display: none;
+
+        &--para {
+          margin-bottom: 3rem;
+        }
+      }
+
+      &__slide.active {
+        display: block;
+        animation: slide 1s linear;
+      }
+    }
+
+    &--indicator {
+      padding-top: 4vh;
+      padding-bottom: 4vh;
+      display: flex;
+      justify-content: center;
+
+      &__img {
+        height: calc(7rem + 6vw);
+        width: calc(7rem + 6vw);
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 2vh 2vw;
+        opacity: 0.2;
+        border: 0.2rem solid var(--color-quinary);
+        cursor: pointer;
+        transform: opacity 1s ease;
+      }
+
+      &__img.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
